@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="bg-[#040f43] w-full h-screen pt-10">
+      <div class="flex flex-col gap-4 p-4 bg-white rounded-lg w-[90%] mx-auto">
+        <div class="grid grid-cols-4 items-center gap-4 p-2 rounded-full border">
+          <div
+            class="flex items-center justify-center p-1.5 rounded-full px-5 focus:bg-[#313f5b] bg-primary border  gap-2"
+          >
+            <img src="./assets/svg/coin.svg" alt="" />
+            <p class="text-[13px] font-semibold  text-white ">Convert</p>
+          </div>
+          <div
+            class="flex items-center justify-center p-1.5 rounded-full px-5 active:bg-[#313f5b] *:active:!text-white duration-500 bg-white border  gap-2"
+          >
+            <img src="./assets/svg/SVG.svg" alt="" />
+            <p class="text-[13px] font-semibold  active:text-white text-[#313f5b]">Send</p>
+          </div>
+          <div
+            class="flex items-center justify-center p-1.5 rounded-full px-5 active:bg-[#313f5b] *:active:!text-white duration-500 bg-white border  gap-2"
+          >
+            <img src="./assets/svg/chart.svg" alt="" />
+            <p class="text-[13px] font-semibold  active:text-white text-[#313f5b]">Charts</p>
+          </div>
+          <div
+            class="flex items-center justify-center p-1.5 rounded-full px-5 active:bg-[#313f5b] *:active:!text-white duration-500 bg-white border  gap-2"
+          >
+            <img src="./assets/svg/alert.svg" alt="" />
+            <p class="text-[13px] font-semibold  active:text-white text-[#313f5b]">Alerts</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3">
+            <div class="border rounded-lg p-2">
+                <p class="text-[#636e82] text-[14px]">Amount</p>
+                <input type="text" placeholder="$1.00" class="  outline-none text-primary placeholder:text-primary placeholder:font-bold font-bold dollar focus:placeholder-white" />
+            </div>
+            <div class="border rounded-lg p-2">
+                <p class="text-[#636e82] text-[14px]">From</p>
+                <select class="font-bold text-[15px] outline-none">
+                    <option  value="usd">USD - US Dollar</option>
+                </select>
+            </div>
+            <div class="border rounded-lg p-2">
+                <p class="text-[#636e82] text-[14px]">To</p>
+                <select class=" outline-none font-bold selectToCurransy"></select>
+            </div>
+        </div>
+        <div class="flex items-center justify-between gap-4 p-2">
+           <div>
+            <p class="font-semibold text-[#5c667b]">
+                <span class="dol">1.00</span> US Dollar =
+            </p>
+            <p class="text-[30px] font-semibold sum">1 Usd</p>
+           </div>
+           <button class="convert bg-primary rounded-lg  p-2 px-4 text-white font-semibold ">convert</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./bundle.js"></script>
+  </body>
+</html>
